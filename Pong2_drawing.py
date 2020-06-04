@@ -11,6 +11,7 @@ screen = pygame.display.set_mode((screen_width,screen_height))
 pygame.display.set_caption('Pong')
 
 # Game rectangles
+# Define rectangles
 ball = pygame.Rect(screen_width/2 - 15, screen_height/2 - 15, 30, 30)
 player = pygame.Rect(screen_width-20, screen_height/2 - 70, 10, 140)
 opponent = pygame.Rect(10, screen_height/2 - 70, 10, 140)
@@ -28,6 +29,7 @@ while True:
     
     # Visuals
     screen.fill(bg_color)
+    # Draw rectangles
     pygame.draw.rect(screen, light_grey, player)
     pygame.draw.rect(screen, light_grey, opponent)
     pygame.draw.ellipse(screen, light_grey, ball)
